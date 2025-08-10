@@ -1,0 +1,173 @@
+{
+  "category": "Community",
+  "projects": [
+    {
+      "_id": "cm1",
+      "image": "https://picsum.photos/300/200?random=5",
+      "title": "CharityConnect",
+      "shortDescription": "Platform to link with nonprofits in their donors with local causes",
+      "detailedDescription": "CharityConnect connects donors and volunteers with nonprofits in their communities, offering a central hub for campaigns, events, and impact tracking. Users can browse causes by location, category, and urgency.",
+      "additionalDescription": "We empower charitable organizations by simplifying how they share needs and receive help from local supporters.",
+      "category": "Community",
+      "subcategory": "Nonprofit",
+      "websiteUrl": "https://www.wikipedia.org",
+      "technologies": ["React", "Node.js", "MongoDB", "Express", "Bootstrap", "AWS"],
+      "keyFeatures": [
+        "Browse nonprofit campaigns based on location filters",
+        "Track donation impact with transparent reporting tools",
+        "Volunteer sign up with integrated scheduling system",
+        "Secure payment gateways for quick donation processing",
+        "Campaign creation with images videos and updates"
+      ],
+      "isFeatured": true,
+      "createdAt": "2024-02-12T09:15:00.000Z"
+    },
+    {
+      "_id": "cm2",
+      "image": "https://picsum.photos/300/200?random=6",
+      "title": "ImpactHub",
+      "shortDescription": "Measure and grow community project engagement",
+      "detailedDescription": "ImpactHub enables nonprofits to track volunteer activity, donations, and event participation while offering analytics to understand community engagement. Organizations can share success stories with rich media posts.",
+      "additionalDescription": "The platform is designed to make data-driven impact measurement easy for grassroots initiatives.",
+      "category": "Community",
+      "subcategory": "Nonprofit",
+      "websiteUrl": "https://www.wikipedia.org",
+      "technologies": ["Vue.js", "Firebase", "Tailwind CSS", "Node.js", "Express"],
+      "keyFeatures": [
+        "Centralized dashboard for tracking donor activities",
+        "Post updates with embedded photos and videos",
+        "Analyze campaign reach with engagement analytics",
+        "Manage volunteer teams with shift assignments",
+        "Integrate donation links with custom branding"
+      ],
+      "isFeatured": false,
+      "createdAt": "2024-05-04T14:25:00.000Z"
+    },
+    {
+      "_id": "cm3",
+      "image": "https://picsum.photos/300/200?random=7",
+      "title": "EventSphere",
+      "shortDescription": "Plan and promote community event organizers to manage gatherings easily",
+      "detailedDescription": "EventSphere allows event organizers to manage ticketing, promotion, and attendance tracking for local community events. It integrates with social platforms for seamless event sharing and RSVPs.",
+      "additionalDescription": "Our mission is to simplify community event management so organizers can focus on meaningful connections.",
+      "category": "Community",
+      "subcategory": "Events",
+      "websiteUrl": "https://www.wikipedia.org",
+      "technologies": ["Next.js", "PostgreSQL", "Prisma", "Tailwind CSS", "Stripe", "Node.js"],
+      "keyFeatures": [
+        "Custom event pages with branding and media",
+        "Ticket sales with secure payment processing",
+        "Track attendance and manage guest lists",
+        "Promote events on multiple social networks",
+        "Automated reminders and follow up messages"
+      ],
+      "isFeatured": true,
+      "createdAt": "2024-03-18T11:40:00.000Z"
+    },
+    {
+      "_id": "cm4",
+      "image": "https://picsum.photos/300/200?random=8",
+      "title": "GatherLink",
+      "shortDescription": "Connect people to and gatherings for people local meetups and activities",
+      "detailedDescription": "GatherLink curates local meetups, workshops, and gatherings for people with shared interests. It uses location and preference filters to recommend events nearby.",
+      "additionalDescription": "We help residents discover and join activities that foster stronger community bonds.",
+      "category": "Community",
+      "subcategory": "Events",
+      "websiteUrl": "https://www.wikipedia.org",
+      "technologies": ["React", "Redux", "Firebase", "Material UI", "Express", "Node.js"],
+      "keyFeatures": [
+        "Personalized event recommendations based on location",
+        "RSVP and attendance tracking for each event",
+        "Share events with friends on social media",
+        "Organizer tools to create and edit events",
+        "Event reminders via email and push notifications"
+      ],
+      "isFeatured": false,
+      "createdAt": "2024-06-10T16:20:00.000Z"
+    },
+    {
+      "_id": "cm5",
+      "image": "https://picsum.photos/300/200?random=9",
+      "title": "EduBridge",
+      "shortDescription": "Bridge education gaps through interactive learning materials online resources",
+      "detailedDescription": "EduBridge provides online courses, mentorship, and interactive learning materials for underserved communities. It connects learners with experienced educators and industry professionals.",
+      "additionalDescription": "We aim to democratize access to quality learning opportunities for all ages.",
+      "category": "Community",
+      "subcategory": "Education",
+      "websiteUrl": "https://www.wikipedia.org",
+      "technologies": ["Angular", "Node.js", "MongoDB", "Express", "Bootstrap"],
+      "keyFeatures": [
+        "Video lessons from verified subject experts",
+        "Interactive quizzes to test student knowledge",
+        "One on one mentorship matching for learners",
+        "Course tracking with progress certificates",
+        "Discussion boards for peer and mentor interaction"
+      ],
+      "isFeatured": true,
+      "createdAt": "2024-01-29T10:05:00.000Z"
+    },
+    {
+      "_id": "cm6",
+      "image": "https://picsum.photos/300/200?random=10",
+      "title": "SkillShareX",
+      "shortDescription": "Peer to peer community skill lifelong learning by connecting people exchange platform",
+      "detailedDescription": "SkillShareX lets people teach and learn skills from others in their community through workshops, online sessions, and resource sharing.",
+      "additionalDescription": "Our platform promotes lifelong learning by connecting people eager to share their expertise.",
+      "category": "Community",
+      "subcategory": "Education",
+      "websiteUrl": "https://www.wikipedia.org",
+      "technologies": ["React", "Node.js", "Prisma", "PostgreSQL", "Chakra UI"],
+      "keyFeatures": [
+        "Searchable list of skills offered by members",
+        "Schedule classes and workshops with ease",
+        "User reviews for instructors and sessions",
+        "Downloadable resources for offline learning",
+        "Gamified learning with badges and rewards"
+      ],
+      "isFeatured": false,
+      "createdAt": "2024-07-07T12:50:00.000Z"
+    },
+    {
+      "_id": "cm7",
+      "image": "https://picsum.photos/300/200?random=11",
+      "title": "CoachFlow",
+      "shortDescription": "Digital tools for community life coaches, sports trainers coaching programs",
+      "detailedDescription": "CoachFlow supports life coaches, sports trainers, and mentors in managing clients, scheduling sessions, and tracking progress all in one place.",
+      "additionalDescription": "Our platform removes admin stress so coaches can focus on client results.",
+      "category": "Community",
+      "subcategory": "Coaching",
+      "websiteUrl": "https://www.wikipedia.org",
+      "technologies": ["Next.js", "MongoDB", "Express", "Tailwind CSS", "Node.js"],
+      "keyFeatures": [
+        "Book and manage coaching sessions online",
+        "Track client goals and progress over time",
+        "Automated reminders for upcoming appointments",
+        "Secure video conferencing for remote coaching",
+        "Resource sharing between coach and client"
+      ],
+      "isFeatured": true,
+      "createdAt": "2024-04-15T09:30:00.000Z"
+    },
+    {
+      "_id": "cm8",
+      "image": "https://picsum.photos/300/200?random=12",
+      "title": "MentorConnect",
+      "shortDescription": "Match mentors with mentees seeking personal community learners",
+      "detailedDescription": "MentorConnect pairs experienced professionals with mentees seeking personal or career growth, offering structured programs and goal tracking tools.",
+      "additionalDescription": "We create meaningful mentor relationships that strengthen community support systems.",
+      "category": "Community",
+      "subcategory": "Coaching",
+      "websiteUrl": "https://www.wikipedia.org",
+      "technologies": ["React", "Firebase", "Material UI", "Node.js", "Express"],
+      "keyFeatures": [
+        "Automated mentor and mentee pairing system",
+        "Goal tracking dashboards for mentees",
+        "Weekly progress check ins with reminders",
+        "Resource library for personal development",
+        "Secure messaging between mentor and mentee"
+      ],
+      "isFeatured": false,
+      "createdAt": "2024-08-02T13:45:00.000Z"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "category": "E-commerce",
+  "projects": [
+    {
+      "_id": "ec1",
+      "image": "https://picsum.photos/300/200?random=1",
+      "title": "ShopSphere",
+      "shortDescription": "Modern online store with seamless user experience",
+      "detailedDescription": "ShopSphere is a feature-rich online shopping platform offering personalized recommendations, secure payments, and fast delivery options for a wide range of products.",
+      "additionalDescription": "The platform is optimized for high performance and supports mobile, tablet, and desktop devices for a smooth shopping journey.",
+      "category": "E-commerce",
+      "subcategory": "Online Shopping",
+      "websiteUrl": "https://www.wikipedia.org",
+      "technologies": ["React", "Next.js", "Node.js", "Express", "MongoDB", "Stripe", "Tailwind CSS"],
+      "keyFeatures": [
+        "Personalized product recommendations based on purchase history",
+        "Secure payment processing with multi currency support",
+        "Real time inventory tracking and order updates",
+        "Advanced product search with category filtering options",
+        "Customer reviews and ratings for all listed products",
+        "Wishlist and save for later functionality"
+      ],
+      "isFeatured": true,
+      "createdAt": "2024-02-14T09:00:00.000Z"
+    },
+    {
+      "_id": "ec2",
+      "image": "https://picsum.photos/300/200?random=2",
+      "title": "UrbanCart",
+      "shortDescription": "Fast and convenient urban product delivery service",
+      "detailedDescription": "UrbanCart focuses on delivering products quickly to city customers, offering an intuitive interface, simple checkout, and wide range of essential items.",
+      "additionalDescription": "With real-time delivery tracking and dedicated support, UrbanCart ensures a smooth and reliable shopping experience.",
+      "category": "E-commerce",
+      "subcategory": "Online Shopping",
+      "websiteUrl": "https://www.wikipedia.org",
+      "technologies": ["Vue.js", "Nuxt.js", "Firebase", "Express", "Bootstrap", "PayPal API"],
+      "keyFeatures": [
+        "One click checkout with multiple payment methods",
+        "Live delivery tracking with estimated arrival times",
+        "Search and filter tools for quick item discovery",
+        "Discount codes and promotional offers integration",
+        "Simple interface optimized for mobile users"
+      ],
+      "isFeatured": false,
+      "createdAt": "2024-04-19T13:25:00.000Z"
+    },
+    {
+      "_id": "ec3",
+      "image": "https://picsum.photos/300/200?random=3",
+      "title": "CourseHub",
+      "shortDescription": "Centralized platform for premium online courses",
+      "detailedDescription": "CourseHub offers an extensive catalog of courses in various categories, complete with video lessons, assignments, and certification options for learners.",
+      "additionalDescription": "Built with scalability in mind, CourseHub delivers engaging educational content to students worldwide through an easy-to-use platform.",
+      "category": "E-commerce",
+      "subcategory": "Online Course",
+      "websiteUrl": "https://www.wikipedia.org",
+      "technologies": ["Next.js", "Prisma", "PostgreSQL", "Node.js", "Tailwind CSS", "AWS S3", "Stripe"],
+      "keyFeatures": [
+        "Interactive video lessons with built in quizzes",
+        "Progress tracking and course completion certificates",
+        "Instructor dashboards for content and student management",
+        "Secure payment processing for course purchases",
+        "Mobile friendly interface for learning on the go"
+      ],
+      "isFeatured": true,
+      "createdAt": "2024-05-22T16:15:00.000Z"
+    },
+    {
+      "_id": "ec4",
+      "image": "https://picsum.photos/300/200?random=4",
+      "title": "SkillMarket",
+      "shortDescription": "Marketplace for independent instructors and learners",
+      "detailedDescription": "SkillMarket enables individual educators to create and sell their own courses, giving students access to diverse learning materials and teaching styles.",
+      "additionalDescription": "The platform supports multiple languages, making it accessible to a global audience with built-in translation features.",
+      "category": "E-commerce",
+      "subcategory": "Online Course",
+      "websiteUrl": "https://www.wikipedia.org",
+      "technologies": ["React", "Redux", "Node.js", "Express", "MySQL", "Bootstrap", "Stripe"],
+      "keyFeatures": [
+        "Instructor profile creation with portfolio display",
+        "Secure transactions between students and instructors",
+        "Multilingual interface with auto translation support",
+        "Built in messaging between teachers and students",
+        "Student reviews and feedback for quality assurance"
+      ],
+      "isFeatured": false,
+      "createdAt": "2024-06-12T11:45:00.000Z"
+    }
+  ]
+}

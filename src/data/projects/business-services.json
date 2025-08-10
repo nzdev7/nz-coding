@@ -1,0 +1,510 @@
+{
+  "category": "Business & Services",
+  "projects": [
+      {
+        "_id": "bs1",
+        "image": "https://picsum.photos/300/200?random=22",
+        "title": "Urban Bites",
+        "shortDescription": "Modern dining with fresh seasonal ingredients daily",
+        "detailedDescription": "Urban Bites offers a contemporary dining experience featuring locally sourced, seasonal produce prepared by experienced chefs. Guests enjoy a vibrant atmosphere, excellent service, and a menu that evolves with the changing seasons to ensure the freshest possible dishes.",
+        "additionalDescription": "Our commitment to fresh ingredients and creative recipes makes every visit memorable. We strive to create a dining environment that blends comfort with sophistication for all guests.",
+        "category": "Business & Services",
+        "subcategory": "Restaurant",
+        "websiteUrl": "https://www.wikipedia.org",
+        "technologies": ["React", "Node.js", "PostgreSQL", "Express", "Tailwind CSS", "Docker"],
+        "keyFeatures": [
+          "Fresh locally sourced ingredients used in all dishes",
+          "Seasonal menus changing to match freshest produce available",
+          "Elegant interior design with comfortable seating arrangements",
+          "Fast and friendly table service for every guest",
+          "Mobile friendly online reservation and menu browsing",
+          "Live cooking events and interactive food workshops"
+        ],
+        "isFeatured": true,
+        "createdAt": "2024-01-15T10:00:00.000Z"
+      },
+      {
+        "_id": "bs2",
+        "image": "https://picsum.photos/300/200?random=23",
+        "title": "Spice Haven",
+        "shortDescription": "Authentic flavors from across the Asian continent",
+        "detailedDescription": "Spice Haven brings the rich flavors of Asia to your table with a menu inspired by culinary traditions from India, China, Thailand, and beyond. Each dish is crafted with care to deliver an unforgettable dining journey.",
+        "additionalDescription": "We aim to celebrate Asia’s diverse food culture through authentic recipes, warm service, and a cozy ambiance ideal for family dinners or date nights.",
+        "category": "Business & Services",
+        "subcategory": "Restaurant",
+        "websiteUrl": "https://www.wikipedia.org",
+        "technologies": ["Vue.js", "Firebase", "Node.js", "MongoDB", "Express", "Bootstrap"],
+        "keyFeatures": [
+          "Authentic recipes prepared with imported spices and herbs",
+          "Comfortable seating arrangements with warm lighting ambiance",
+          "Special chef’s tasting menu updated every month",
+          "Online ordering with integrated payment processing",
+          "Special events featuring guest chefs from various countries"
+        ],
+        "isFeatured": false,
+        "createdAt": "2024-02-28T11:10:00.000Z"
+      },
+      {
+        "_id": "bs3",
+        "image": "https://picsum.photos/300/200?random=24",
+        "title": "Coastal Grill",
+        "shortDescription": "Fresh seafood with stunning oceanfront dining views",
+        "detailedDescription": "Coastal Grill is known for its exceptional seafood dishes prepared from freshly caught fish and shellfish. Located along the waterfront, guests enjoy panoramic views while savoring expertly prepared meals.",
+        "additionalDescription": "Our passion for seafood and scenic dining ensures every meal is both delicious and memorable for our valued guests.",
+        "category": "Business & Services",
+        "subcategory": "Restaurant",
+        "websiteUrl": "https://www.wikipedia.org",
+        "technologies": ["Next.js", "Prisma", "PostgreSQL", "Tailwind CSS", "Express", "Node.js"],
+        "keyFeatures": [
+          "Daily seafood specials based on fresh morning catches",
+          "Ocean view dining area with open-air seating",
+          "Customizable dishes to meet dietary preferences",
+          "Mobile friendly booking and pre-order options",
+          "Live music performances on weekends and holidays"
+        ],
+        "isFeatured": true,
+        "createdAt": "2024-03-10T14:45:00.000Z"
+      },
+      {
+        "_id": "bs4",
+        "image": "https://picsum.photos/300/200?random=25",
+        "title": "FinTrack",
+        "shortDescription": "Smart personal finance and expense tracking tool",
+        "detailedDescription": "FinTrack helps individuals manage their finances efficiently through automated expense categorization, budget tracking, and savings goal monitoring. Users gain insights into spending habits with visual analytics.",
+        "additionalDescription": "Our goal is to make financial management simple and accessible to everyone through user-friendly tools and real-time data visualization.",
+        "category": "Business & Services",
+        "subcategory": "Finance",
+        "websiteUrl": "https://www.wikipedia.org",
+        "technologies": ["React", "Node.js", "PostgreSQL", "Chart.js", "Express", "Tailwind CSS"],
+        "keyFeatures": [
+          "Automated expense categorization with AI-based algorithms",
+          "Real time balance updates and transaction history tracking",
+          "Customizable budgets with overspending alerts notifications",
+          "Visual analytics with easy to understand graphs",
+          "Bank level encryption for all sensitive financial data"
+        ],
+        "isFeatured": true,
+        "createdAt": "2024-01-22T09:20:00.000Z"
+      },
+      {
+        "_id": "bs5",
+        "image": "https://picsum.photos/300/200?random=26",
+        "title": "LoanPro",
+        "shortDescription": "Simplified loan application and management platform",
+        "detailedDescription": "LoanPro connects borrowers with financial institutions through an easy-to-use platform that simplifies the loan process. From application to approval, users have complete transparency over each step.",
+        "additionalDescription": "We aim to remove complexities from loan procedures and create a faster, fairer lending environment for everyone.",
+        "category": "Business & Services",
+        "subcategory": "Finance",
+        "websiteUrl": "https://www.wikipedia.org",
+        "technologies": ["Vue.js", "Firebase", "Node.js", "Express", "Bootstrap", "MongoDB"],
+        "keyFeatures": [
+          "Step by step guided loan application process",
+          "Instant eligibility checks and approval notifications",
+          "Secure document upload and storage for applicants",
+          "Dashboard for tracking loan repayment progress",
+          "24/7 customer support with instant chat options"
+        ],
+        "isFeatured": false,
+        "createdAt": "2024-04-12T16:30:00.000Z"
+      },
+      {
+        "_id": "bs6",
+        "image": "https://picsum.photos/300/200?random=27",
+        "title": "InvestWise",
+        "shortDescription": "Intelligent investment portfolio tracking application",
+        "detailedDescription": "InvestWise provides a unified platform for tracking all your investments in one place. With real-time market data, AI-powered suggestions, and risk analysis, it helps investors make informed decisions.",
+        "additionalDescription": "We combine data science with user-friendly design to bring clarity and control to personal investment strategies.",
+        "category": "Business & Services",
+        "subcategory": "Finance",
+        "websiteUrl": "https://www.wikipedia.org",
+        "technologies": ["Next.js", "Prisma", "PostgreSQL", "Tailwind CSS", "Chart.js", "Node.js", "Express"],
+        "keyFeatures": [
+          "Unified dashboard for tracking diverse investment assets",
+          "AI powered investment suggestions and market trend analysis",
+          "Real time updates from multiple financial data sources",
+          "Secure user authentication and encrypted data storage",
+          "Portfolio performance tracking with historical comparisons"
+        ],
+        "isFeatured": true,
+        "createdAt": "2024-05-05T12:50:00.000Z"
+      },
+       {
+        "_id": "bs7",
+        "image": "https://picsum.photos/300/200?random=28",
+        "title": "CleanPro",
+        "shortDescription": "Professional cleaning for homes and offices daily",
+        "detailedDescription": "CleanPro offers top-quality residential and commercial cleaning services, using eco-friendly products and trained staff to ensure spotless results. Services are tailored to suit schedules and requirements.",
+        "additionalDescription": "We aim to provide reliable, hygienic, and efficient cleaning solutions for clients seeking consistent quality and attention to detail.",
+        "category": "Business & Services",
+        "subcategory": "Services",
+        "websiteUrl": "https://www.wikipedia.org",
+        "technologies": ["React", "Node.js", "MongoDB", "Express", "Bootstrap", "Tailwind CSS"],
+        "keyFeatures": [
+          "Eco friendly cleaning products safe for all surfaces",
+          "Custom cleaning schedules to fit client availability",
+          "Experienced staff with verified background checks",
+          "Transparent pricing and instant online booking system",
+          "24/7 emergency cleaning service for urgent requests"
+        ],
+        "isFeatured": true,
+        "createdAt": "2024-02-10T10:30:00.000Z"
+      },
+      {
+        "_id": "bs8",
+        "image": "https://picsum.photos/300/200?random=29",
+        "title": "TechFix",
+        "shortDescription": "On demand repair services for electronics and gadgets",
+        "detailedDescription": "TechFix connects skilled technicians with customers needing repair services for smartphones, laptops, and other devices. All repairs come with a warranty and service guarantee.",
+        "additionalDescription": "We make electronic repairs quick, affordable, and trustworthy, ensuring customers are never without their essential devices for long.",
+        "category": "Business & Services",
+        "subcategory": "Services",
+        "websiteUrl": "https://www.wikipedia.org",
+        "technologies": ["Vue.js", "Firebase", "Node.js", "Express", "Bootstrap", "MySQL"],
+        "keyFeatures": [
+          "Certified technicians for a wide range of devices",
+          "Same day repairs with pickup and delivery option",
+          "Warranty coverage included with all repair services",
+          "Real time service status updates for customers",
+          "Competitive pricing without hidden additional charges"
+        ],
+        "isFeatured": false,
+        "createdAt": "2024-03-25T09:15:00.000Z"
+      },
+      {
+        "_id": "bs9",
+        "image": "https://picsum.photos/300/200?random=30",
+        "title": "EventEase",
+        "shortDescription": "Complete event planning and management made simple",
+        "detailedDescription": "EventEase is a platform for organizing corporate events, weddings, and private parties, offering vendor coordination, budgeting, and design consultations in one place.",
+        "additionalDescription": "We help clients create memorable experiences with meticulous planning, professional execution, and creative event themes.",
+        "category": "Business & Services",
+        "subcategory": "Services",
+        "websiteUrl": "https://www.wikipedia.org",
+        "technologies": ["Next.js", "Prisma", "PostgreSQL", "Tailwind CSS", "Express", "Node.js"],
+        "keyFeatures": [
+          "End to end event planning with dedicated managers",
+          "Curated vendor list for catering, decor, and venues",
+          "Budget tracking tools with real time expense updates",
+          "Custom event theme creation and mood board designs",
+          "Post event follow ups and client satisfaction checks"
+        ],
+        "isFeatured": true,
+        "createdAt": "2024-05-14T12:00:00.000Z"
+      },
+       {
+        "_id": "bs10",
+        "image": "https://picsum.photos/300/200?random=31",
+        "title": "BizSuite",
+        "shortDescription": "All in one business operations management solution",
+        "detailedDescription": "BizSuite provides tools for managing sales, inventory, HR, and customer relationships, making it easier for small to medium enterprises to operate efficiently.",
+        "additionalDescription": "We combine multiple essential tools into a single platform, reducing costs and increasing productivity for businesses.",
+        "category": "Business & Services",
+        "subcategory": "Business",
+        "websiteUrl": "https://www.wikipedia.org",
+        "technologies": ["React", "Node.js", "PostgreSQL", "Express", "Chart.js", "Tailwind CSS"],
+        "keyFeatures": [
+          "Unified dashboard for monitoring all business functions",
+          "Automated reports and analytics for performance tracking",
+          "Integrated inventory and sales management systems",
+          "Secure cloud storage for business documents and data",
+          "Multi user access control with role based permissions"
+        ],
+        "isFeatured": true,
+        "createdAt": "2024-01-30T11:50:00.000Z"
+      },
+      {
+        "_id": "bs11",
+        "image": "https://picsum.photos/300/200?random=32",
+        "title": "TradeLink",
+        "shortDescription": "Connects suppliers with verified business buyers",
+        "detailedDescription": "TradeLink is an online B2B platform enabling suppliers to reach new buyers, streamline transactions, and manage product catalogs easily.",
+        "additionalDescription": "We aim to make wholesale trade faster, safer, and more transparent through digital solutions.",
+        "category": "Business & Services",
+        "subcategory": "Business",
+        "websiteUrl": "https://www.wikipedia.org",
+        "technologies": ["Vue.js", "Firebase", "Node.js", "Express", "Bootstrap", "MongoDB"],
+        "keyFeatures": [
+          "Verified profiles for suppliers and buyers for trust",
+          "Easy catalog uploads with bulk product import feature",
+          "Built in messaging system for faster negotiations",
+          "Payment protection and dispute resolution services",
+          "Analytics on product views, sales, and engagement"
+        ],
+        "isFeatured": false,
+        "createdAt": "2024-04-05T15:45:00.000Z"
+      },
+      {
+        "_id": "bs12",
+        "image": "https://picsum.photos/300/200?random=33",
+        "title": "CorpNet",
+        "shortDescription": "Corporate networking and partnership building platform",
+        "detailedDescription": "CorpNet allows businesses to network, collaborate, and find strategic partners through smart recommendations and interest-based matching.",
+        "additionalDescription": "We help companies connect with like-minded partners to achieve mutual growth and market expansion.",
+        "category": "Business & Services",
+        "subcategory": "Business",
+        "websiteUrl": "https://www.wikipedia.org",
+        "technologies": ["Next.js", "Prisma", "PostgreSQL", "Tailwind CSS", "Express", "Node.js"],
+        "keyFeatures": [
+          "AI based matching for potential business collaborations",
+          "Private messaging and secure file sharing options",
+          "Event and webinar scheduling for members",
+          "Customizable company profile pages with portfolio",
+          "Advanced search filters for industry and location"
+        ],
+        "isFeatured": true,
+        "createdAt": "2024-06-12T10:05:00.000Z"
+      },
+       {
+        "_id": "bs13",
+        "image": "https://picsum.photos/300/200?random=34",
+        "title": "GlamHub",
+        "shortDescription": "Book beauty services with top-rated professionals in their city",
+        "detailedDescription": "GlamHub is a booking platform for hair, makeup, and spa services, connecting users with top-rated professionals in their city.",
+        "additionalDescription": "We provide an easy way to discover and book skilled beauty professionals, anytime and anywhere.",
+        "category": "Business & Services",
+        "subcategory": "Beauty & Fashion",
+        "websiteUrl": "https://www.wikipedia.org",
+        "technologies": ["React", "Node.js", "PostgreSQL", "Express", "Tailwind CSS", "Firebase"],
+        "keyFeatures": [
+          "Search and book verified beauty service providers",
+          "Real time availability and instant booking confirmations",
+          "Service reviews and ratings from verified customers",
+          "Cashless payments with secure transaction encryption",
+          "Special discounts for returning loyal customers"
+        ],
+        "isFeatured": true,
+        "createdAt": "2024-02-18T14:20:00.000Z"
+      },
+      {
+        "_id": "bs14",
+        "image": "https://picsum.photos/300/200?random=35",
+        "title": "StyleVault",
+        "shortDescription": "Virtual wardrobe and fashion styling outfit suggestions assistance",
+        "detailedDescription": "StyleVault lets users upload clothing items and get AI-powered outfit suggestions. It also recommends new items based on personal style.",
+        "additionalDescription": "We make fashion fun and accessible by combining technology with style expertise.",
+        "category": "Business & Services",
+        "subcategory": "Beauty & Fashion",
+        "websiteUrl": "https://www.wikipedia.org",
+        "technologies": ["Vue.js", "Firebase", "Node.js", "Express", "Bootstrap", "MongoDB"],
+        "keyFeatures": [
+          "AI powered outfit matching from existing wardrobe",
+          "Personalized shopping suggestions from partnered stores",
+          "Save and share outfit ideas with friends online",
+          "Seasonal trends updates tailored to personal style",
+          "Easy clothing organization with category tagging system"
+        ],
+        "isFeatured": false,
+        "createdAt": "2024-05-08T17:40:00.000Z"
+      },
+      {
+        "_id": "bs15",
+        "image": "https://picsum.photos/300/200?random=36",
+        "title": "Trendify",
+        "shortDescription": "Track and shop latest fashion trends from top brands online",
+        "detailedDescription": "Trendify curates trending styles from top brands and influencers, allowing users to shop directly from the platform with exclusive deals.",
+        "additionalDescription": "We aim to be the go-to destination for discovering and buying the latest fashion trends.",
+        "category": "Business & Services",
+        "subcategory": "Beauty & Fashion",
+        "websiteUrl": "https://www.wikipedia.org",
+        "technologies": ["Next.js", "Prisma", "PostgreSQL", "Tailwind CSS", "Express", "Node.js"],
+        "keyFeatures": [
+          "Curated trending fashion items updated daily",
+          "Exclusive discounts from partnered fashion retailers",
+          "Integrated wishlist and cart system for easy shopping",
+          "Style inspiration boards from global influencers",
+          "AI recommendations based on browsing and purchase history"
+        ],
+        "isFeatured": true,
+        "createdAt": "2024-07-02T13:10:00.000Z"
+      },
+       {
+        "_id": "bs16",
+        "image": "https://picsum.photos/300/200?random=37",
+        "title": "MediCare",
+        "shortDescription": "Online doctor consultations and health monitoring app",
+        "detailedDescription": "MediCare provides secure online consultations with licensed doctors, along with features for tracking vital signs and managing prescriptions.",
+        "additionalDescription": "We aim to make healthcare more accessible through convenient, affordable digital tools.",
+        "category": "Business & Services",
+        "subcategory": "Healthcare & Wellness",
+        "websiteUrl": "https://www.wikipedia.org",
+        "technologies": ["React", "Node.js", "PostgreSQL", "Express", "Tailwind CSS", "Firebase"],
+        "keyFeatures": [
+          "Instant online video consultations with certified doctors",
+          "Medical history tracking and secure record storage",
+          "Prescription management with pharmacy integrations",
+          "24/7 health advice chat support for quick guidance",
+          "AI symptom checker for preliminary health insights"
+        ],
+        "isFeatured": true,
+        "createdAt": "2024-03-02T08:25:00.000Z"
+      },
+      {
+        "_id": "bs17",
+        "image": "https://picsum.photos/300/200?random=38",
+        "title": "FitTrack",
+        "shortDescription": "Personalized fitness tracking and nutrition coaching",
+        "detailedDescription": "FitTrack helps users achieve their fitness goals through workout tracking, meal planning, and AI-driven progress monitoring.",
+        "additionalDescription": "We combine expert fitness guidance with technology to support healthy lifestyles.",
+        "category": "Business & Services",
+        "subcategory": "Healthcare & Wellness",
+        "websiteUrl": "https://www.wikipedia.org",
+        "technologies": ["Vue.js", "Firebase", "Node.js", "Express", "Bootstrap", "MongoDB"],
+        "keyFeatures": [
+          "Customized workout plans based on personal goals",
+          "Meal planning with calorie and nutrient tracking",
+          "Progress tracking with visual analytics and charts",
+          "Integration with wearable fitness tracking devices",
+          "Daily motivational tips and health reminders"
+        ],
+        "isFeatured": false,
+        "createdAt": "2024-04-18T16:55:00.000Z"
+      },
+      {
+        "_id": "bs18",
+        "image": "https://picsum.photos/300/200?random=39",
+        "title": "WellNest",
+        "shortDescription": "Mental wellness therapy and meditation platform",
+        "detailedDescription": "WellNest connects users with certified therapists and offers guided meditation sessions for stress reduction and emotional well-being.",
+        "additionalDescription": "We focus on improving mental health through professional support and self-care tools.",
+        "category": "Business & Services",
+        "subcategory": "Healthcare & Wellness",
+        "websiteUrl": "https://www.wikipedia.org",
+        "technologies": ["Next.js", "Prisma", "PostgreSQL", "Tailwind CSS", "Express", "Node.js"],
+        "keyFeatures": [
+          "Access to licensed therapists via video or chat",
+          "Daily guided meditation and breathing exercises",
+          "Mood tracking with AI-driven wellness suggestions",
+          "Confidential and encrypted therapy sessions",
+          "Community support groups and expert webinars"
+        ],
+        "isFeatured": true,
+        "createdAt": "2024-06-20T11:15:00.000Z"
+      },
+      {
+        "_id": "bs19",
+        "image": "https://picsum.photos/300/200?random=40",
+        "title": "TripMate",
+        "shortDescription": "Plan and book personalized travel and find best experiences",
+        "detailedDescription": "TripMate helps travelers design custom itineraries, book accommodations, and find local experiences tailored to their preferences.",
+        "additionalDescription": "We aim to make travel planning seamless, enjoyable, and affordable for everyone.",
+        "category": "Business & Services",
+        "subcategory": "Travel & Tourism",
+        "websiteUrl": "https://www.wikipedia.org",
+        "technologies": ["React", "Node.js", "PostgreSQL", "Express", "Tailwind CSS", "Firebase"],
+        "keyFeatures": [
+          "AI based personalized itinerary planning tools",
+          "Real time booking for hotels and local tours",
+          "Integrated maps and location based recommendations",
+          "Secure payments and booking confirmations instantly",
+          "Travel insurance options for added peace of mind"
+        ],
+        "isFeatured": true,
+        "createdAt": "2024-02-12T10:40:00.000Z"
+      },
+      {
+        "_id": "bs20",
+        "image": "https://picsum.photos/300/200?random=41",
+        "title": "Wanderly",
+        "shortDescription": "Discover unique travel destinations and activities",
+        "detailedDescription": "Wanderly curates off-the-beaten-path travel spots and experiences, encouraging exploration beyond the typical tourist attractions.",
+        "additionalDescription": "We inspire travelers to explore new places with handpicked recommendations.",
+        "category": "Business & Services",
+        "subcategory": "Travel & Tourism",
+        "websiteUrl": "https://www.wikipedia.org",
+        "technologies": ["Vue.js", "Firebase", "Node.js", "Express", "Bootstrap", "MongoDB"],
+        "keyFeatures": [
+          "Curated list of unique global travel experiences",
+          "User generated travel tips and destination reviews",
+          "Photo galleries to inspire travel planning decisions",
+          "Social sharing tools for itineraries and memories",
+          "Exclusive travel discounts for platform subscribers"
+        ],
+        "isFeatured": false,
+        "createdAt": "2024-04-27T13:25:00.000Z"
+      },
+      {
+        "_id": "bs21",
+        "image": "https://picsum.photos/300/200?random=42",
+        "title": "GlobeTrek",
+        "shortDescription": "Adventure travel and group tour booking platform",
+        "detailedDescription": "GlobeTrek organizes adventure trips for groups, including hiking, scuba diving, and cultural immersion tours with experienced guides.",
+        "additionalDescription": "We make adventure travel safe, affordable, and accessible to everyone.",
+        "category": "Business & Services",
+        "subcategory": "Travel & Tourism",
+        "websiteUrl": "https://www.wikipedia.org",
+        "technologies": ["Next.js", "Prisma", "PostgreSQL", "Tailwind CSS", "Express", "Node.js"],
+        "keyFeatures": [
+          "Adventure travel packages with professional tour guides",
+          "Safety protocols and insured travel arrangements",
+          "Flexible booking and cancellation policies",
+          "Small group sizes for personalized experiences",
+          "Multi destination itineraries for extended adventures"
+        ],
+        "isFeatured": true,
+        "createdAt": "2024-07-18T09:55:00.000Z"
+      },
+       {
+        "_id": "bs22",
+        "image": "https://picsum.photos/300/200?random=43",
+        "title": "RentEase",
+        "shortDescription": "Simplified rental property management for landlords",
+        "detailedDescription": "RentEase helps landlords manage properties, collect rent online, and communicate with tenants through a secure platform.",
+        "additionalDescription": "We make rental management stress free and transparent for property owners.",
+        "category": "Business & Services",
+        "subcategory": "Property Management",
+        "websiteUrl": "https://www.wikipedia.org",
+        "technologies": ["React", "Node.js", "PostgreSQL", "Express", "Tailwind CSS", "Firebase"],
+        "keyFeatures": [
+          "Automated rent collection with digital receipts issued",
+          "Tenant portal for submitting maintenance requests",
+          "Expense and income tracking for all properties",
+          "Lease document storage with secure access",
+          "Vacancy advertising directly from the dashboard"
+        ],
+        "isFeatured": true,
+        "createdAt": "2024-03-14T12:50:00.000Z"
+      },
+      {
+        "_id": "bs23",
+        "image": "https://picsum.photos/300/200?random=44",
+        "title": "PropTrack",
+        "shortDescription": "Monitor and maintain multiple rental tracking repairs properties",
+        "detailedDescription": "PropTrack gives landlords tools for scheduling maintenance, tracking repairs, and monitoring tenant satisfaction.",
+        "additionalDescription": "We aim to ensure properties remain in top condition year round.",
+        "category": "Business & Services",
+        "subcategory": "Property Management",
+        "websiteUrl": "https://www.wikipedia.org",
+        "technologies": ["Vue.js", "Firebase", "Node.js", "Express", "Bootstrap", "MongoDB"],
+        "keyFeatures": [
+          "Maintenance scheduling and automated vendor reminders",
+          "Repair tracking with photo and cost documentation",
+          "Tenant feedback and rating system for services",
+          "Custom reports for property performance insights",
+          "Multiple property profiles with quick switching options"
+        ],
+        "isFeatured": false,
+        "createdAt": "2024-05-22T15:20:00.000Z"
+      },
+      {
+        "_id": "bs24",
+        "image": "https://picsum.photos/300/200?random=45",
+        "title": "LeaseLink",
+        "shortDescription": "Streamline lease agreements and tenant onboarding",
+        "detailedDescription": "LeaseLink offers digital lease signing, ID verification, and move-in coordination tools to speed up tenant onboarding.",
+        "additionalDescription": "We replace manual paperwork with an efficient, fully digital process for landlords and tenants.",
+        "category": "Business & Services",
+        "subcategory": "Property Management",
+        "websiteUrl": "https://www.wikipedia.org",
+        "technologies": ["Next.js", "Prisma", "PostgreSQL", "Tailwind CSS", "Express", "Node.js"],
+        "keyFeatures": [
+          "Digital lease signing with legally binding documents",
+          "Automated tenant background and ID verification",
+          "Onboarding checklist for smooth move in process",
+          "Secure cloud storage for all property files",
+          "Integrated rent payment and invoice generation"
+        ],
+        "isFeatured": true,
+        "createdAt": "2024-06-28T08:35:00.000Z"
+      }
+    ]
+  }

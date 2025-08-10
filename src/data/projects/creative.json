@@ -1,0 +1,194 @@
+{
+  "category": "Creative",
+  "projects": [
+    {
+      "_id": "cr1",
+      "image": "https://picsum.photos/300/200?random=13",
+      "title": "Lens & Light Studio",
+      "shortDescription": "Capturing timeless portraits and event photography",
+      "detailedDescription": "Lens & Light Studio specializes in portrait, wedding, and event photography, delivering high-quality images that preserve precious memories. Our photographers work closely with clients to capture their unique vision.",
+      "additionalDescription": "From candid shots to carefully staged portraits, we ensure each image tells a story worth remembering.",
+      "category": "Creative",
+      "subcategory": "Photography",
+      "websiteUrl": "https://www.wikipedia.org",
+      "technologies": ["Lightroom", "Photoshop", "Canon EOS R5", "Studio Lighting"],
+      "keyFeatures": [
+        "High resolution professional photography",
+        "On location and in studio shooting options",
+        "Custom editing and retouching for every photo",
+        "Event coverage packages tailored to client needs",
+        "Secure online galleries for easy sharing and downloads"
+      ],
+      "isFeatured": true,
+      "createdAt": "2024-01-10T09:00:00.000Z"
+    },
+    {
+      "_id": "cr2",
+      "image": "https://picsum.photos/300/200?random=14",
+      "title": "Urban Frames",
+      "shortDescription": "Street photography with an of the city through artistic twist",
+      "detailedDescription": "Urban Frames captures the soul of the city through vibrant street photography. Each image tells a story of everyday life, beauty, and unexpected moments.",
+      "additionalDescription": "Our mission is to bring urban landscapes and candid human expressions to life through unique compositions and lighting.",
+      "category": "Creative",
+      "subcategory": "Photography",
+      "websiteUrl": "https://www.wikipedia.org",
+      "technologies": ["Fujifilm X-T5", "Lightroom", "Photoshop", "ND Filters"],
+      "keyFeatures": [
+        "Candid city life photography",
+        "Fine art prints available for purchase",
+        "Workshops on urban and street photography",
+        "Limited edition signed photo collections",
+        "Collaboration with local artists for exhibitions"
+      ],
+      "isFeatured": false,
+      "createdAt": "2024-02-18T15:20:00.000Z"
+    },
+    {
+      "_id": "cr3",
+      "image": "https://picsum.photos/300/200?random=15",
+      "title": "Cinematic Motion",
+      "shortDescription": "Professional videography for events and businesses",
+      "detailedDescription": "Cinematic Motion offers top-tier videography services for weddings, corporate events, and promotional campaigns. We combine storytelling and visual artistry to produce compelling videos.",
+      "additionalDescription": "From pre-production planning to post-production editing, we manage the entire video creation process with precision.",
+      "category": "Creative",
+      "subcategory": "Videography",
+      "websiteUrl": "https://www.wikipedia.org",
+      "technologies": ["Sony FX3", "DaVinci Resolve", "After Effects", "Gimbals"],
+      "keyFeatures": [
+        "4K cinematic video production",
+        "Drone footage for unique perspectives",
+        "Professional color grading and editing",
+        "Scriptwriting and storyboard creation",
+        "Multi-camera setups for large events"
+      ],
+      "isFeatured": true,
+      "createdAt": "2024-03-05T13:45:00.000Z"
+    },
+    {
+      "_id": "cr4",
+      "image": "https://picsum.photos/300/200?random=16",
+      "title": "Live Sound Studio",
+      "shortDescription": "Recording and producing high-quality music tracks",
+      "detailedDescription": "Live Sound Studio provides a space for musicians to record, mix, and master their tracks. We offer state-of-the-art equipment and experienced sound engineers.",
+      "additionalDescription": "Whether you're an indie artist or a full band, our studio ensures your music sounds exactly how you envision it.",
+      "category": "Creative",
+      "subcategory": "Music",
+      "websiteUrl": "https://www.wikipedia.org",
+      "technologies": ["Pro Tools", "Logic Pro X", "Neumann Microphones", "Analog Mixing Consoles"],
+      "keyFeatures": [
+        "High fidelity multi-track recording",
+        "Professional mixing and mastering services",
+        "Acoustically treated rooms for clear sound",
+        "Instrument rental and session musicians available",
+        "Flexible hourly and daily studio rates"
+      ],
+      "isFeatured": true,
+      "createdAt": "2024-04-11T10:25:00.000Z"
+    },
+    {
+      "_id": "cr5",
+      "image": "https://picsum.photos/300/200?random=17",
+      "title": "Harmony Beats",
+      "shortDescription": "Music composition and production for all genres",
+      "detailedDescription": "Harmony Beats creates original compositions and soundtracks for artists, commercials, and film projects. Our producers blend creativity with technical skill to craft memorable music.",
+      "additionalDescription": "From pop to orchestral, we bring your sound vision to life with precision and passion.",
+      "category": "Creative",
+      "subcategory": "Music",
+      "websiteUrl": "https://www.wikipedia.org",
+      "technologies": ["FL Studio", "Ableton Live", "Kontakt Libraries", "Studio Monitors"],
+      "keyFeatures": [
+        "Custom music composition across genres",
+        "Full production from concept to final mix",
+        "Collaboration with vocalists and instrumentalists",
+        "Sound design for film and advertising",
+        "Quick turnaround for urgent projects"
+      ],
+      "isFeatured": false,
+      "createdAt": "2024-05-15T14:50:00.000Z"
+    },
+    {
+      "_id": "cr6",
+      "image": "https://picsum.photos/300/200?random=18",
+      "title": "Mindful Words",
+      "shortDescription": "Lifestyle and mindfulness is a blog dedicated to mental wellness blog",
+      "detailedDescription": "Mindful Words is a blog dedicated to mental wellness, productivity, and balanced living. We share practical tips, personal stories, and expert advice.",
+      "additionalDescription": "Our goal is to inspire readers to live with intention and clarity through relatable and actionable content.",
+      "category": "Creative",
+      "subcategory": "Blog",
+      "websiteUrl": "https://www.wikipedia.org",
+      "technologies": ["WordPress", "Elementor", "Google Analytics", "Yoast SEO"],
+      "keyFeatures": [
+        "Weekly articles on wellness and productivity",
+        "Guest contributions from industry experts",
+        "Downloadable resources and guides",
+        "SEO optimized for better reach",
+        "Responsive design for all devices"
+      ],
+      "isFeatured": true,
+      "createdAt": "2024-06-02T09:40:00.000Z"
+    },
+    {
+      "_id": "cr7",
+      "image": "https://picsum.photos/300/200?random=19",
+      "title": "Wander Tales",
+      "shortDescription": "Travel stories and photography ravel experiences with stunning blog",
+      "detailedDescription": "Wander Tales combines travel experiences with stunning photography to inspire readers to explore the world. We feature destination guides, cultural insights, and practical travel tips.",
+      "additionalDescription": "Each post blends storytelling and imagery to create an immersive reading experience.",
+      "category": "Creative",
+      "subcategory": "Blog",
+      "websiteUrl": "https://www.wikipedia.org",
+      "technologies": ["Ghost CMS", "Markdown", "Google Maps API", "Cloudinary"],
+      "keyFeatures": [
+        "Destination guides with local tips",
+        "High quality travel photography",
+        "Interactive maps for planning trips",
+        "Subscriber exclusive travel deals",
+        "Multi-language support"
+      ],
+      "isFeatured": false,
+      "createdAt": "2024-07-09T08:15:00.000Z"
+    },
+    {
+      "_id": "cr8",
+      "image": "https://picsum.photos/300/200?random=20",
+      "title": "The Art of Me",
+      "shortDescription": "A personal portfolio of art and collection of personal artworks design projects",
+      "detailedDescription": "The Art of Me showcases a collection of personal artworks, graphic designs, and creative experiments. It serves as both a portfolio and a creative journal.",
+      "additionalDescription": "This project is about self-expression and continuous creative growth.",
+      "category": "Creative",
+      "subcategory": "Personal",
+      "websiteUrl": "https://www.wikipedia.org",
+      "technologies": ["Figma", "Adobe Illustrator", "HTML", "CSS", "JavaScript"],
+      "keyFeatures": [
+        "Curated portfolio of creative works",
+        "Detailed process breakdown for each project",
+        "Interactive design showcases",
+        "Integration with Behance and Dribbble",
+        "Regularly updated with new works"
+      ],
+      "isFeatured": true,
+      "createdAt": "2024-08-01T11:30:00.000Z"
+    },
+    {
+      "_id": "cr9",
+      "image": "https://picsum.photos/300/200?random=21",
+      "title": "Life in Pixels",
+      "shortDescription": "A personal blog documenting digital scrapbook of everyday daily life",
+      "detailedDescription": "Life in Pixels is a personal diary-style blog where moments are captured and shared through photography and short stories.",
+      "additionalDescription": "This blog serves as a digital scrapbook of everyday experiences.",
+      "category": "Creative",
+      "subcategory": "Personal",
+      "websiteUrl": "https://www.wikipedia.org",
+      "technologies": ["Next.js", "Vercel", "Tailwind CSS", "Cloudinary"],
+      "keyFeatures": [
+        "Photo-driven personal blog format",
+        "Storytelling with minimalistic design",
+        "Monthly highlights section",
+        "Easy navigation through categories",
+        "Optimized for fast mobile viewing"
+      ],
+      "isFeatured": false,
+      "createdAt": "2024-08-14T17:10:00.000Z"
+    }
+  ]
+}

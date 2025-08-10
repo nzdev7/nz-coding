@@ -1,26 +1,337 @@
-@import "tailwindcss";
+/* src/app/globals.css */
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@import 'tailwindcss';
+@custom-variant dark (&:where(.dark, .dark *));
+
+.container {
+  @apply px-4 sm:px-5 md:px-6 lg:px-8 xl:px-9 2xl:px-12 3xl:px-16 
+  w-full mx-auto max-w-full xl:max-w-[1280px] 3xl:max-w-[1440px];
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+/*-----------------------------------*\
+ -     # RESET & BASE STYLES #       -
+\*-----------------------------------*/
+@layer base {
+  * {
+    @apply m-0 p-0 box-border;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  html {
+    scroll-behavior: smooth;
+  }
+
+  a,
+  em,
+  svg,
+  input,
+  label,
+  button,
+  textarea {
+    @apply block;
+  }
+
+  i,
+  em {
+    @apply not-italic;
+  }
+
+  a {
+    @apply no-underline;
+  }
+
+  svg,
+  button {
+    @apply text-inherit cursor-pointer transition-all duration-250 ease-in;
+  }
+
+  input,
+  button,
+  textarea {
+    @apply border-none outline-none bg-transparent focus:outline-none transition-all duration-250 ease-in;
+  }
+
+  p,
+  .font-roboto {
+    @apply font-normal;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .font-nunito {
+    @apply font-extrabold;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .transition-300 {
+    @apply transition-all duration-300 ease-in-out;
+  }
+  .transition-400 {
+    @apply transition-all duration-400 ease-in-out;
+  }
+  .transition-500 {
+    @apply transition-all duration-500 ease-in-out;
+  }
+  .transition-750 {
+    @apply transition-all duration-750 ease-in-out;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/*-----------------------------------*\
+ -     # REUSABLE CSS CLASSES #      -
+\*-----------------------------------*/
+@layer components {
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+  .flex-col-center {
+    @apply flex flex-col items-center justify-center;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    @apply px-[17px] py-[13px] xl:px-4.5 xl:py-3.5 3xl:px-6 3xl:py-4 
+    text-sm xl:text-[0.95rem]  3xl:text-[1rem] font-bold rounded-lg
+    transition-all duration-300 ease-in
+    hover:-translate-y-0.5 hover:scale-105;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .btn-primary.touch {
+    @apply scale-105 -translate-y-[0.5] bg-left;
+  }
+  .btn-primary {
+    @apply text-white bg-[length:200%_100%] bg-right hover:bg-left;
+  }
+
+  .btn-secondary.touch {
+    @apply scale-105 -translate-y-[0.5] text-white bg-gradient-to-r 
+    from-cyan-600 to-teal-500 dark:from-cyan-500 dark:to-teal-400;
+  }
+  .btn-secondary {
+    @apply bg-gray-200 dark:bg-slate-700 dark:text-white hover:text-white
+    hover:bg-gradient-to-r from-cyan-600 to-teal-500 dark:from-cyan-500 dark:to-teal-400;
+  }
+
+  /*-----------------------------------*\
+  -          # THEME COLORS #          -
+  \*-----------------------------------*/
+  .bg-primary {
+    @apply bg-white dark:bg-slate-900;
+  }
+  .bg-secondary {
+    @apply bg-gray-100 dark:bg-slate-800;
+  }
+  .bg-tertiary {
+    @apply bg-cyan-600 dark:bg-cyan-500;
+  }
+
+  .text-primary {
+    @apply text-cyan-700 dark:text-cyan-300;
+  }
+  .text-secondary {
+    @apply text-slate-700 dark:text-slate-300;
+  }
+  .text-tertiary {
+    @apply text-cyan-600 dark:text-cyan-400;
+  }
+
+  .border-primary {
+    @apply border border-gray-300 dark:border-slate-600;
+  }
+  .border-secondary {
+    @apply border border-cyan-500 dark:border-slate-500;
+  }
+
+  .shadow-primary {
+    @apply shadow-md shadow-black/10 dark:shadow-black/40;
+  }
+  .shadow-secondary {
+    @apply shadow-sm dark:shadow-gray-400/15 shadow-slate-700/20;
+  }
+
+  .bg-gradient,
+  .btn-primary,
+  .nav-links::before,
+  .subtitle::after,
+  .lg-subtitle::after {
+    @apply bg-gradient-to-r from-[#0077b6] via-[#00a8a8] via-51% to-[#0077b6] 
+    dark:bg-gradient-to-r dark:from-[#0ea5ea] dark:via-[#0bd1d1] dark:via-51% 
+    dark:to-[#0ea5ea] transition-all duration-300 ease-in-out;
+  }
+
+  .subtitle,
+  .lg-subtitle,
+  .text-gradient {
+    @apply bg-gradient-to-r from-cyan-600 to-teal-600 
+    dark:from-cyan-500 dark:to-teal-400 bg-clip-text text-transparent;
+  }
+
+  .text-gradient-1 {
+    @apply bg-gradient-to-r from-cyan-700 to-teal-500 
+    dark:from-sky-400  dark:to-teal-300 bg-clip-text text-transparent;
+  }
+
+  .bg-primary-card.touch {
+    @apply bg-gray-100 dark:bg-slate-800;
+  }
+  .bg-primary-card {
+    @apply bg-white dark:bg-slate-900 hover:bg-gray-100 hover:dark:bg-slate-800;
+  }
+
+  .bg-secondary-card.touch {
+    @apply bg-white dark:bg-slate-900;
+  }
+  .bg-secondary-card {
+    @apply bg-gray-100 dark:bg-slate-800 hover:bg-white hover:dark:bg-slate-900;
+  }
+}
+
+/*-----------------------------------*\
+  -#    Swiper pagination bullets    #-
+  \*-----------------------------------*/
+.custom-pagination .swiper-pagination-bullet {
+  @apply bg-cyan-600 dark:bg-cyan-500 size-2.5 md:size-3;
+}
+
+/*-----------------------------------*\
+  -      # SHIMMER ANIMATION #         -
+  \*-----------------------------------*/
+.skeleton-fields {
+  @apply bg-gray-200 dark:bg-slate-700 relative overflow-hidden;
+}
+
+.skeleton-fields::before {
+  @apply content-[''] absolute inset-0;
+  transform: translateX(-100%);
+  animation: shimmer 2s infinite ease-in-out;
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.8) 50%, transparent 100%);
+}
+
+.dark .skeleton-fields::before {
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.1) 50%, transparent 100%);
+}
+
+/*-----------------------------------*\
+ -   #  ANIMATION DEFINITIONS  #     -
+\*-----------------------------------*/
+
+/* = Shimmer Animation = */
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* = Subtitle Animation = */
+.subtitle::after,
+.lg-subtitle::after {
+  @apply content-[''] absolute w-full h-[2.5px] left-0 -bottom-[2px] rounded-full xl:h-[3px];
+  animation: subtitle-animate 5s linear infinite;
+}
+.lg-subtitle::after {
+  animation: subtitle-animate 10s linear infinite;
+}
+
+@keyframes subtitle-animate {
+  0% {
+    width: 100%;
+    left: 0;
+  }
+  50% {
+    width: 0;
+    left: 100%;
+  }
+  50.1% {
+    width: 0;
+    left: 0;
+  }
+  100% {
+    width: 100%;
+    left: 0;
+  }
+}
+
+/* = Hero Image Animation = */
+.hero-profile::before,
+.hero-profile::after {
+  @apply content-[''] w-full h-full absolute rounded-full;
+  animation: rotate-border 10s linear infinite;
+  background: conic-gradient(transparent, transparent, transparent, theme('colors.cyan.600'));
+}
+
+.hero-profile::after {
+  animation-delay: -5s;
+  background: conic-gradient(transparent, transparent, transparent, theme('colors.teal.600'));
+}
+
+@keyframes rotate-border {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* = Card Border Animation = */
+.card-animation::before,
+.card-animation::after {
+  @apply content-[''] w-[300%] h-[300%] absolute transition-all duration-300 ease-in-out;
+  background: conic-gradient(transparent);
+  animation: rotate-border 14s linear infinite;
+}
+
+.card-animation::after {
+  animation-delay: -7s;
+}
+
+@media (hover: hover) {
+  .card-animation:hover::after,
+  .card-animation:hover::before {
+    background: conic-gradient(transparent, transparent, transparent, theme('colors.cyan.700'));
+  }
+}
+
+@media (hover: none) {
+  .card-animation.touch::after,
+  .card-animation.touch::before {
+    background: conic-gradient(transparent, transparent, transparent, theme('colors.cyan.700'));
+  }
+}
+
+.card-animation .content.touch {
+  @apply border-transparent;
+}
+
+@keyframes rotate-border {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*-----------------------------------*\
+ -# CUSTOM PROPERTIES (BREAKPOINTS) #-
+\*-----------------------------------*/
+@theme {
+  --breakpoint-sm: 35.94rem;
+  --breakpoint-md: 48rem;
+  --breakpoint-lg: 60rem;
+  --breakpoint-xl: 64rem;
+  --breakpoint-2xl: 80rem;
+  --breakpoint-3xl: 100rem;
+}
+
+/*-----------------------------------*\
+ -     # Touch Effect Styles #       -
+\*-----------------------------------*/
+.nav-links.touch::before {
+  @apply w-full;
 }
