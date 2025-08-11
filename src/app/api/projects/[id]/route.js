@@ -1,3 +1,5 @@
+// src/app/api/projects/[id]/route.js
+
 import { NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';

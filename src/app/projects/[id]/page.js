@@ -1,3 +1,5 @@
+// src/app/projects/[id]/page.js
+
 import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
@@ -12,14 +14,6 @@ import LivePreviewTrigger from '@/components/projects/LivePreviewModal';
  */
 async function getProject(id) {
   try {
-    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
-    const response = await fetch(`${baseUrl}/api/projects/${id}`, {
-      cache: 'force-cache', // Enable caching for better performance
-      next: {
-        revalidate: 3600, // Revalidate every hour to keep data fresh
-      },
-    });
-
     // Handle different response scenarios
     if (!response.ok) {
       if (response.status === 404) {
