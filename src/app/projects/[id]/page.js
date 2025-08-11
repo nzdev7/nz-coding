@@ -14,6 +14,11 @@ import LivePreviewTrigger from '@/components/projects/LivePreviewModal';
  */
 async function getProject(id) {
   try {
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
+    const response = await fetch(`${baseUrl}/api/projects/${id}`, {
+      cache: 'no-store', // Optional: disable caching if desired
+    });
+
     // Handle different response scenarios
     if (!response.ok) {
       if (response.status === 404) {
