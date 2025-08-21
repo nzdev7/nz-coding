@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import { FaArrowLeftLong, FaArrowRightLong } from 'react-icons/fa6';
 import { ProjectCard, SkeletonProjectCard } from './ProjectCard.js';
+import { getFeaturedProjects } from '@/lib/projectData';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -45,6 +46,7 @@ export const ProjectSlider = ({ projects }) => {
       <Swiper
         className="max-w-sm md:max-w-3xl xl:max-w-full"
         loop={true}
+        grabCursor={true}
         modules={[Navigation, Pagination, Autoplay]}
         navigation={{ prevEl: '.prev-btn', nextEl: '.next-btn' }}
         autoplay={{ delay: 4000, disableOnInteraction: false, pauseOnMouseEnter: true }}
@@ -83,17 +85,16 @@ export const ProjectSlider = ({ projects }) => {
 };
 
 //
-// ─── SKELETON UI ──────────────────────────────────────────────────
+// ─── SKELETON UI FOR LOADING ──────────────────────────────────────
 //
-export const ProjectCardSkeleton = ({ limit = 9 }) => {
+export const ProjectCardSkeleton = ({ limit = 6 }) => {
   const [skeletonCount, setSkeletonCount] = useState(1);
 
   useEffect(() => {
     const updateCount = () => {
       const width = window.innerWidth;
       if (width >= 1024) {
-        // For desktop, use the limit but cap at what makes sense for grid
-        setSkeletonCount(Math.min(limit, limit === 4 ? 4 : 9));
+        setSkeletonCount(Math.min(limit, limit === 4 ? 4 : 6));
       } else if (width >= 768) {
         setSkeletonCount(2);
       } else {
@@ -109,8 +110,8 @@ export const ProjectCardSkeleton = ({ limit = 9 }) => {
 
   // Determine grid columns based on limit
   const getGridCols = () => {
-    if (limit === 4) return 'xl:grid-cols-2'; // 2x2 grid for 4 items
-    return 'xl:grid-cols-3'; // 3x3 grid for 9 items
+    if (limit === 4) return 'xl:grid-cols-2';
+    return 'xl:grid-cols-3';
   };
 
   return (
@@ -125,17 +126,12 @@ export const ProjectCardSkeleton = ({ limit = 9 }) => {
 };
 
 //
-// ─── MAIN UI AFTER DATA LOAD ─────────────────────────────────────
+// ─── MAIN UI COMPONENT WITH STYLE LOADING ─────────────────────────
 //
-export const FeaturedProjectsUI = ({ projects, limit = 9 }) => {
+export const FeaturedProjectsUI = ({ projects, limit = 6, isLoading = false }) => {
   const [isDesktop, setIsDesktop] = useState(false);
-  const [delayedRender, setDelayedRender] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setDelayedRender(true);
-    }, 0);
-
     const handleResize = () => {
       setIsDesktop(window.innerWidth >= 1024);
     };
@@ -144,17 +140,19 @@ export const FeaturedProjectsUI = ({ projects, limit = 9 }) => {
     window.addEventListener('resize', handleResize);
 
     return () => {
-      clearTimeout(timer);
       window.removeEventListener('resize', handleResize);
     };
   }, []);
 
-  if (!delayedRender) return null;
+  // Show skeleton while styles are loading
+  if (isLoading) {
+    return <ProjectCardSkeleton limit={limit} />;
+  }
 
   // Determine grid layout based on limit
   const getGridLayout = () => {
-    if (limit === 4) return 'grid-cols-2 gap-8 3xl:gap-10'; // 2x2 for 4 items
-    return 'grid-cols-3 gap-10 3xl:gap-12'; // 3x3 for 9 items
+    if (limit === 4) return 'grid-cols-2 gap-8 3xl:gap-10';
+    return 'grid-cols-3 gap-10 3xl:gap-12';
   };
 
   if (isDesktop) {
@@ -171,36 +169,29 @@ export const FeaturedProjectsUI = ({ projects, limit = 9 }) => {
 };
 
 //
-// ─── MAIN COMPONENT (FETCH + DISPLAY) ─────────────────────────────
+// ─── MAIN COMPONENT WITH STYLE LOADING EFFECT ────────────────────
 //
-const FeaturedProjects = ({ limit = 9, endpoint = '/api/projects?isFeatured=true' }) => {
-  const [projects, setProjects] = useState(null);
+const FeaturedProjects = ({ limit = 6 }) => {
+  const [isStylesLoading, setIsStylesLoading] = useState(true);
+  const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    const fetchProjects = async () => {
-      try {
-        // Build query parameters
-        const params = new URLSearchParams();
-        if (limit) params.append('limit', limit.toString());
+    // Get projects data immediately
+    const projectsData = getFeaturedProjects(limit);
+    setProjects(projectsData);
 
-        // Construct full URL
-        const url = `${endpoint}&${params.toString()}`;
+    // Add a brief delay to ensure CSS styles are fully loaded
+    const styleLoadingTimer = setTimeout(() => {
+      setIsStylesLoading(false);
+    }, 10); // 10ms - brief enough to feel instant but allows styles to load
 
-        const res = await fetch(url);
-        const data = await res.json();
-        setProjects(data.projects || []);
-      } catch (err) {
-        console.error('Failed to fetch featured projects:', err);
-        setProjects([]); // Optional: display error UI
-      }
+    // Cleanup
+    return () => {
+      clearTimeout(styleLoadingTimer);
     };
+  }, [limit]);
 
-    fetchProjects();
-  }, [limit, endpoint]);
-
-  if (!projects) return <ProjectCardSkeleton limit={limit} />;
-
-  return <FeaturedProjectsUI projects={projects} limit={limit} />;
+  return <FeaturedProjectsUI projects={projects} limit={limit} isLoading={isStylesLoading} />;
 };
 
 export default FeaturedProjects;

@@ -74,7 +74,7 @@
       "category": "Creative",
       "subcategory": "Music",
       "websiteUrl": "https://www.wikipedia.org",
-      "technologies": ["Pro Tools", "Logic Pro X", "Neumann Microphones", "Analog Mixing Consoles"],
+      "technologies": ["Pro Tools", "Logic Pro X", "Microphones", "Consoles"],
       "keyFeatures": [
         "High fidelity multi-track recording",
         "Professional mixing and mastering services",
@@ -95,7 +95,7 @@
       "category": "Creative",
       "subcategory": "Music",
       "websiteUrl": "https://www.wikipedia.org",
-      "technologies": ["FL Studio", "Ableton Live", "Kontakt Libraries", "Studio Monitors"],
+      "technologies": ["FL Studio", "Ableton Live", "Libraries", "Monitors"],
       "keyFeatures": [
         "Custom music composition across genres",
         "Full production from concept to final mix",

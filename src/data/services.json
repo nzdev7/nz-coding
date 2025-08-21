@@ -1,0 +1,40 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "title": "Web Development",
+      "icon": "/services/icon-1.png",
+      "description": "I create professional websites that work perfectly on all devices. Your site will look great and function smoothly, helping you reach more customers online and grow your business effectively."
+    },
+    {
+      "id": 2,
+      "title": "E-Commerce Store",
+      "icon": "/services/icon-2.png",
+      "description": "I build online stores where customers can easily browse and purchase your products. Your e-commerce site will be secure, user-friendly, and designed to increase sales and grow your business."
+    },
+    {
+      "id": 3,
+      "title": "CMS Development",
+      "icon": "/services/icon-3.png",
+      "description": "I create websites with easy-to-use management systems, allowing you to update content yourself. No technical skills needed – you'll have full control to keep your site fresh and current."
+    },
+    {
+      "id": 4,
+      "title": "Design to Website",
+      "icon": "/services/icon-4.png",
+      "description": "I transform your website designs into fully functional websites. Your visual concepts become interactive sites that work perfectly on all devices while maintaining your exact design vision."
+    },
+    {
+      "id": 5,
+      "title": "Website Redesign",
+      "icon": "/services/icon-5.png",
+      "description": "I update your existing website with a modern look and improved functionality. Your redesigned site will work better, attract more visitors, and provide an improved experience for your users."
+    },
+    {
+      "id": 6,
+      "title": "Website Maintenance",
+      "icon": "/services/icon-6.png",
+      "description": "I provide regular care for your website, keeping it secure, updated, and running smoothly. With ongoing maintenance, your site will always perform well and stay protected from problems."
+    }
+  ]
+}

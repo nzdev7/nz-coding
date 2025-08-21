@@ -2,20 +2,18 @@
 
 import ReactPaginate from 'react-paginate';
 import { useRouter } from 'next/navigation';
-import { ProjectCard, SkeletonProjectCard } from './ProjectCard';
-import { useState, useEffect, useCallback, useMemo } from 'react';
+import { ProjectCard } from './ProjectCard';
+import { useState, useEffect, useMemo } from 'react';
 import { Search, Filter, XCircle, ChevronLeft, ChevronRight } from 'lucide-react';
+import { getProjectsWithFilters } from '@/lib/projectData';
 
 // Main UI component for displaying and filtering projects
 export default function ProjectsPageUI() {
   // === State management ===
-  const [projects, setProjects] = useState([]);
-  const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('');
   const [selectedSubcategory, setSelectedSubcategory] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
-  const [totalPages, setTotalPages] = useState(0);
 
   // === Static category and subcategory options ===
   const categories = useMemo(
@@ -37,39 +35,18 @@ export default function ProjectsPageUI() {
     []
   );
 
-  // === Fetch projects from API based on filters and pagination ===
-  const fetchProjects = useCallback(async () => {
-    try {
-      setLoading(true); // Start loading before fetching
-      const params = new URLSearchParams({
-        page: currentPage.toString(),
-        limit: '12',
-        ...(searchTerm && { search: searchTerm }),
-        ...(selectedCategory && { category: selectedCategory }),
-        ...(selectedSubcategory && { subcategory: selectedSubcategory }),
-      });
-
-      // const response = await fetch(`/api/projects?${params}`);
-      const response = await fetch(`/api/projects?${params.toString()}`);
-      const data = await response.json();
-
-      if (response.ok) {
-        setProjects(data.projects);
-        setTotalPages(data.pagination.totalPages);
-      } else {
-        console.error('Failed to fetch projects');
-      }
-    } catch (error) {
-      console.error('Network error while fetching projects');
-    } finally {
-      setLoading(false); // Stop loading after fetch (success or fail)
-    }
+  // === Get filtered projects (instant - no API calls!) ===
+  const projectsData = useMemo(() => {
+    return getProjectsWithFilters({
+      page: currentPage,
+      limit: 12,
+      search: searchTerm,
+      category: selectedCategory,
+      subcategory: selectedSubcategory,
+    });
   }, [currentPage, searchTerm, selectedCategory, selectedSubcategory]);
 
-  // === Fetch projects when component mounts or filters change ===
-  useEffect(() => {
-    fetchProjects();
-  }, [fetchProjects]);
+  const { projects, pagination } = projectsData;
 
   // === Clear subcategory if it's not valid for the selected category ===
   useEffect(() => {
@@ -80,6 +57,11 @@ export default function ProjectsPageUI() {
       }
     }
   }, [selectedCategory, selectedSubcategory, categories]);
+
+  // === Reset to page 1 when filters change ===
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [searchTerm, selectedCategory, selectedSubcategory]);
 
   // === Handle pagination click ===
   const handlePageClick = ({ selected }) => {
@@ -155,15 +137,8 @@ export default function ProjectsPageUI() {
           </select>
         </div>
 
-        {/* === Projects List or Loading State === */}
-        {loading ? (
-          // --- Show skeleton cards while loading ---
-          <div className="max-w-sm md:max-w-3xl xl:max-w-full mx-auto grid gap-6 md:gap-10 3xl:gap-12 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
-            {Array.from({ length: 12 }).map((_, index) => (
-              <SkeletonProjectCard key={index} />
-            ))}
-          </div>
-        ) : projects.length === 0 ? (
+        {/* === Projects List (Instant Loading!) === */}
+        {projects.length === 0 ? (
           // --- Show empty state when no projects found ---
           <div className="text-center py-20">
             <Filter size={48} className="text-primary mx-auto mb-4" />
@@ -183,10 +158,10 @@ export default function ProjectsPageUI() {
         )}
 
         {/* === Pagination Component === */}
-        {totalPages > 1 && (
+        {pagination.totalPages > 1 && (
           <div className="flex justify-center mt-8">
             <ReactPaginate
-              pageCount={totalPages}
+              pageCount={pagination.totalPages}
               pageRangeDisplayed={3}
               marginPagesDisplayed={1}
               onPageChange={handlePageClick}
@@ -212,7 +187,7 @@ export default function ProjectsPageUI() {
   );
 }
 
-// === GoBackButto ===
+// === GoBackButton ===
 export const GoBackButton = () => {
   const router = useRouter();
 

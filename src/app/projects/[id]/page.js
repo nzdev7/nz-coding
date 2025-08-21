@@ -1,5 +1,3 @@
-// src/app/projects/[id]/page.js
-
 import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
@@ -7,45 +5,26 @@ import { Mail, Check, ArrowUpRight } from 'lucide-react';
 import { GoBackButton } from '@/components/projects/ProjectsPageUI';
 import FeaturedProjects from '@/components/projects/FeaturedProjects';
 import LivePreviewTrigger from '@/components/projects/LivePreviewModal';
+import { getProjectById, getAllProjects } from '@/lib/projectData';
 
 /**
- * Fetches a single project from the API using the project ID
- * Includes caching for better performance and error handling
+ * Generate static params for all projects (build-time optimization)
  */
-async function getProject(id) {
-  try {
-    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
-    const response = await fetch(`${baseUrl}/api/projects/${id}`, {
-      cache: 'no-store', // Optional: disable caching if desired
-    });
+export async function generateStaticParams() {
+  const allProjects = getAllProjects();
 
-    // Handle different response scenarios
-    if (!response.ok) {
-      if (response.status === 404) {
-        console.log(`Project ${id} not found`);
-        return null;
-      }
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-
-    const data = await response.json();
-    return data.project;
-  } catch (error) {
-    console.error('Error fetching project:', error);
-    return null;
-  }
+  return allProjects.map((project) => ({
+    id: project._id,
+  }));
 }
 
 /**
- * Generates dynamic metadata for SEO and social sharing
- * Creates page title, description, and Open Graph tags based on project data
+ * Generate dynamic metadata for SEO
  */
-export async function generateMetadata(props) {
-  const { params } = await props;
+export async function generateMetadata({ params }) {
   const { id } = await params;
-  const project = await getProject(id);
+  const project = getProjectById(id);
 
-  // Provide fallback metadata if project not found
   if (!project) {
     return {
       title: 'Project Not Found - Portfolio',
@@ -53,7 +32,6 @@ export async function generateMetadata(props) {
     };
   }
 
-  // Generate SEO-friendly metadata from project data
   return {
     title: `${project.title} - Portfolio`,
     description: project.shortDescription,
@@ -66,15 +44,12 @@ export async function generateMetadata(props) {
 }
 
 /**
- * Main component that renders the detailed project page
- * Shows project image, description, features, technologies, and related projects
+ * Main component for project detail page (instant loading!)
  */
 const ProjectDetailPage = async ({ params }) => {
-  // Extract project ID from URL parameters
   const { id } = await params;
-  const project = await getProject(id);
+  const project = getProjectById(id); // Instant lookup from static data
 
-  // Show 404 page if project doesn't exist
   if (!project) {
     notFound();
   }
@@ -225,7 +200,7 @@ const ProjectDetailPage = async ({ params }) => {
             </Link>
           </div>
 
-          {/* Display 4 featured projects at the bottom */}
+          {/* Display 4 featured projects at the bottom (instant loading!) */}
           <FeaturedProjects limit={4} />
         </div>
       </div>

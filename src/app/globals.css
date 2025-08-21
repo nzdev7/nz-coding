@@ -198,6 +198,14 @@
   @apply bg-cyan-600 dark:bg-cyan-500 size-2.5 md:size-3;
 }
 
+.service-slider .swiper-scrollbar {
+  height: var(--swiper-scrollbar-size, 5px) !important;
+}
+
+.service-slider .swiper-scrollbar-drag {
+  @apply !bg-cyan-600 dark:!bg-cyan-400;
+}
+
 /*-----------------------------------*\
   -      # SHIMMER ANIMATION #         -
   \*-----------------------------------*/
