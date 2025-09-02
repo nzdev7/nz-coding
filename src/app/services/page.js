@@ -1,6 +1,6 @@
 import { ChevronsRight } from 'lucide-react';
-import FaqList from '@/components/services/FaqSection';
-import { ServicesList, CallToAction } from '@/components/services/ServicesSection';
+import FaqList from '@/components/services/ServicesFaq';
+import { ServicesList, CallToAction } from '@/components/services/SercicesGrid';
 
 export const metadata = {
   title: 'Professional Services - Web Development & More',

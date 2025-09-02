@@ -10,7 +10,7 @@ const useTouchHandler = () => {
 
   // Default CSS selectors for elements that should have touch functionality
   const defaultSelectors =
-    '.mTouch,.nav-links,.btn-primary,.btn-secondary,.bg-primary-card,.bg-secondary-card,.card-animation';
+    '.onMobile, .mTouch, .nav-links, .btn-primary, .btn-secondary, .bg-primary-card, .bg-secondary-card, .card-animation';
 
   // Add 'touch' class when touch/mouse events start
   const addTouch = useCallback((e) => e.currentTarget.classList.add('touch'), []);

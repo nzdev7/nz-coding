@@ -5,7 +5,7 @@ import { Mail, Check, ArrowUpRight } from 'lucide-react';
 import { GoBackButton } from '@/components/projects/ProjectsPageUI';
 import FeaturedProjects from '@/components/projects/FeaturedProjects';
 import LivePreviewTrigger from '@/components/projects/LivePreviewModal';
-import { getProjectById, getAllProjects } from '@/lib/projectData';
+import { getProjectById, getAllProjects } from '@/hooks/useProjects';
 
 /**
  * Generate static params for all projects (build-time optimization)

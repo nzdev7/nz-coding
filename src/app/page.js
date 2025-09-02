@@ -2,7 +2,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { FileText, ArrowRight, ArrowUpRight } from 'lucide-react';
 import FeaturedProjects from '@/components/projects/FeaturedProjects.js';
-import FeaturedServices from '@/components/services/FeaturedServices.js';
+import FeaturedServices from '@/components/services/ServicesSlider.js';
+import { ShareExperienceButton } from '@/components/reviews/ReviewSmUI';
+import ReviewsSlider from '@/components/reviews/ReviewsSlider';
 
 const HomePage = () => {
   return (
@@ -19,7 +21,6 @@ const HomePage = () => {
               <Image src="/hero.png" alt="nawaz profile" fill className="transform translate-y-5" />
             </div>
           </div>
-
           <div className="sm:text-center md:text-left">
             <h4 className="text-tertiary font-black sm:font-extrabold text-base xl:text-lg 3xl:text-xl">
               Hello<i className="pl-1 text-gradient">Everyone</i>!
@@ -38,7 +39,7 @@ const HomePage = () => {
               <Link href="/contact" className="btn-primary rounded-full">
                 Let's Work Together
               </Link>
-              <Link href="/works" className="btn-secondary rounded-full">
+              <Link href="/projects" className="btn-secondary rounded-full">
                 See My Works
               </Link>
             </div>
@@ -51,10 +52,8 @@ const HomePage = () => {
         <div className="container">
           <div className="text-center mb-10 xl:mb-12 3xl:mb-14">
             <h4 className="subtitle text-primary relative max-w-max mx-auto px-0.5 xl:text-lg 3xl:text-xl">About Me</h4>
-
             <h2 className="text-gradient-1 my-2.5 text-4xl xl:text-5xl 3xl:text-[55px]">Why Hire Me?</h2>
           </div>
-
           <div className="mx-3 text-center grid gap-8 md:grid-cols-2 3xl:gap-16">
             {/* # MY JOURNEY # */}
             <div className="card-animation flex-center relative p-[3px] rounded-2xl overflow-hidden transition-300">
@@ -75,7 +74,6 @@ const HomePage = () => {
                 </Link>
               </div>
             </div>
-
             {/* # MY EXPERTISE # */}
             <div className="card-animation flex-center relative p-[3px] rounded-2xl overflow-hidden transition-300">
               <div
@@ -107,10 +105,8 @@ const HomePage = () => {
               <h4 className="subtitle text-primary relative max-w-max mx-auto xl:mx-0 px-0.5 xl:text-lg 3xl:text-xl">
                 Featured Projects
               </h4>
-
               <h2 className="text-gradient-1 my-2.5 xl:mb-0 text-4xl xl:text-5xl 3xl:text-[55px]">My Recent Work</h2>
             </div>
-
             <Link href="/projects" className="btn-primary hidden max-w-max xl:flex md:gap-2 group">
               View All Projects
               <ArrowUpRight
@@ -120,7 +116,6 @@ const HomePage = () => {
               />
             </Link>
           </div>
-
           <FeaturedProjects limit={6} />
         </div>
       </section>
@@ -133,12 +128,8 @@ const HomePage = () => {
               <h4 className="subtitle text-primary relative max-w-max mx-auto xl:mx-0 px-0.5 xl:text-lg 3xl:text-xl">
                 My Services
               </h4>
-
-              <h2 className="text-gradient-1 my-2.5 xl:mb-0 text-4xl xl:text-5xl 3xl:text-[55px]">
-                What I Do for Clients
-              </h2>
+              <h2 className="text-gradient-1 my-2.5 xl:mb-0 text-4xl xl:text-5xl 3xl:text-[55px]">Services I Offer</h2>
             </div>
-
             <Link href="/services" className="btn-primary hidden max-w-max xl:flex md:gap-2 group">
               View All Services
               <ArrowUpRight
@@ -148,8 +139,36 @@ const HomePage = () => {
               />
             </Link>
           </div>
-
           <FeaturedServices />
+        </div>
+      </section>
+
+      {/* REVIEWS SECTION */}
+      <section className="py-20">
+        <div className="container">
+          <div className="text-center mb-13 xl:mb-14 3xl:mb-15">
+            <div>
+              <h4 className="subtitle text-primary relative max-w-max mx-auto px-0.5 xl:text-lg 3xl:text-xl">
+                Client Reviews
+              </h4>
+              <h2 className="text-gradient-1 my-2.5 text-4xl xl:text-5xl 3xl:text-[55px]">What Clients Say</h2>
+            </div>
+
+            <div className="flex-center flex-wrap gap-4 sm:gap-8 mt-5">
+              <ShareExperienceButton />
+
+              <Link href="/reviews" className="btn-secondary flex gap-2 group">
+                View All Reviews
+                <ArrowUpRight
+                  size={18}
+                  strokeWidth={2.5}
+                  className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-0.5"
+                />
+              </Link>
+            </div>
+          </div>
+
+          <ReviewsSlider />
         </div>
       </section>
     </main>

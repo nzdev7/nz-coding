@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import { FaArrowLeftLong, FaArrowRightLong } from 'react-icons/fa6';
 import { ProjectCard, SkeletonProjectCard } from './ProjectCard.js';
-import { getFeaturedProjects } from '@/lib/projectData';
+import { getFeaturedProjects } from '@/hooks/useProjects.js';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -152,7 +152,7 @@ export const FeaturedProjectsUI = ({ projects, limit = 6, isLoading = false }) =
   // Determine grid layout based on limit
   const getGridLayout = () => {
     if (limit === 4) return 'grid-cols-2 gap-8 3xl:gap-10';
-    return 'grid-cols-3 gap-10 3xl:gap-12';
+    return 'grid-cols-3 gap-5 2xl:gap-10 3xl:gap-13';
   };
 
   if (isDesktop) {

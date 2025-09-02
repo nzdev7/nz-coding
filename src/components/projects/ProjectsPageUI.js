@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 import { ProjectCard } from './ProjectCard';
 import { useState, useEffect, useMemo } from 'react';
 import { Search, Filter, XCircle, ChevronLeft, ChevronRight } from 'lucide-react';
-import { getProjectsWithFilters } from '@/lib/projectData';
+import { getProjectsWithFilters } from '@/hooks/useProjects';
 
 // Main UI component for displaying and filtering projects
 export default function ProjectsPageUI() {

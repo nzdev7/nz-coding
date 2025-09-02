@@ -127,7 +127,7 @@ export const FeaturedServicesUI = ({ services, isLoading = false }) => {
 
   if (isDesktop) {
     return (
-      <div className="grid grid-cols-3 gap-10 3xl:gap-12">
+      <div className="grid grid-cols-3 gap-5 2xl:gap-10 3xl:gap-13">
         {services.slice(0, 6).map((service) => (
           <ServiceCard key={service.id} service={service} />
         ))}

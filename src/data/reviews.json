@@ -1,0 +1,151 @@
+{
+  "defaultReviews": [
+    {
+      "id": 1,
+      "rating": 5,
+      "name": "Emma Thompson",
+      "profession": "Software Developer",
+      "image": "https://picsum.photos/200/200?random=1",
+      "feedback": "Daniel demonstrated an exceptional understanding of my project and delivered top-notch results with remarkable attention to detail and creativity."
+    },
+    {
+      "id": 2,
+      "rating": 4,
+      "name": "Daniel Carter",
+      "profession": "Graphic Designer",
+      "image": "https://picsum.photos/200/200?random=2",
+      "feedback": "Emma's creative solutions and dedication to delivering quality work exceeded all my expectations. She brought my vision to life effortlessly."
+    },
+    {
+      "id": 3,
+      "rating": 3,
+      "name": "Sophia Wilson",
+      "profession": "Digital Marketer",
+      "image": "https://picsum.photos/200/200?random=3",
+      "feedback": "James provided innovative marketing strategies that significantly boosted my project's success. A highly skilled and collaborative professional."
+    },
+    {
+      "id": 4,
+      "rating": 5,
+      "name": "James Anderson",
+      "profession": "Content Writer",
+      "image": "https://picsum.photos/200/200?random=4",
+      "feedback": "Sophia's exceptional writing skills and ability to communicate complex ideas in simple terms are truly remarkable. Highly recommended!"
+    },
+    {
+      "id": 5,
+      "rating": 2,
+      "name": "Olivia Parker",
+      "profession": "Product Manager",
+      "image": "https://picsum.photos/200/200?random=5",
+      "feedback": "John's leadership and project management skills ensured the successful completion of our project ahead of schedule. A true professional."
+    },
+    {
+      "id": 6,
+      "rating": 4,
+      "name": "John Miller",
+      "profession": "UX/UI Designer",
+      "image": "https://picsum.photos/200/200?random=6",
+      "feedback": "Olivia's design approach is both user-centric and creative, delivering interfaces that are as functional as they are aesthetically pleasing."
+    },
+    {
+      "id": 7,
+      "rating": 3,
+      "name": "Mia Garcia",
+      "profession": "Marketing Strategist",
+      "image": "https://picsum.photos/200/200?random=7",
+      "feedback": "George's ability to understand target audiences and deliver tailored marketing campaigns is unmatched. Very happy with the outcome!"
+    },
+    {
+      "id": 8,
+      "rating": 5,
+      "name": "George Mitchell",
+      "profession": "SEO Specialist",
+      "image": "https://picsum.photos/200/200?random=8",
+      "feedback": "Mia's expertise in SEO strategies led to a significant boost in our site's traffic and search rankings. Excellent work!"
+    },
+    {
+      "id": 9,
+      "rating": 5,
+      "name": "Charlotte Davis",
+      "profession": "Web Developer",
+      "image": "https://picsum.photos/200/200?random=9",
+      "feedback": "Liam's development skills were key in bringing our website's features to life with efficiency. A dependable and skilled developer."
+    },
+    {
+      "id": 10,
+      "rating": 4,
+      "name": "Liam Edwards",
+      "profession": "Data Analyst",
+      "image": "https://picsum.photos/200/200?random=10",
+      "feedback": "Charlotte's ability to turn raw data into meaningful insights was exactly what our team needed to make informed decisions."
+    },
+    {
+      "id": 11,
+      "rating": 3,
+      "name": "Ethan Brown",
+      "profession": "Financial Advisor",
+      "image": "https://picsum.photos/200/200?random=11",
+      "feedback": "Nora's financial strategies were instrumental in helping me secure the future of my business. Highly recommend her services!"
+    },
+    {
+      "id": 12,
+      "rating": 4,
+      "name": "Nora Harris",
+      "profession": "HR Manager",
+      "image": "https://picsum.photos/200/200?random=12",
+      "feedback": "Ethan provided clear, actionable financial advice that helped me make smarter investment decisions. Highly knowledgeable and approachable."
+    },
+    {
+      "id": 13,
+      "rating": 5,
+      "name": "Ava Martinez",
+      "profession": "Social Media Specialist",
+      "image": "https://picsum.photos/200/200?random=13",
+      "feedback": "Oscar's ability to create engaging content and his in-depth understanding of social media trends really boosted our online presence."
+    },
+    {
+      "id": 14,
+      "rating": 2,
+      "name": "Oscar Robinson",
+      "profession": "Business Consultant",
+      "image": "https://picsum.photos/200/200?random=14",
+      "feedback": "Ava's strategies for improving our social media engagement were innovative and effective. She truly understands how to connect with audiences."
+    },
+    {
+      "id": 15,
+      "rating": 5,
+      "name": "Isabella Clark",
+      "profession": "Software Engineer",
+      "image": "https://picsum.photos/200/200?random=15",
+      "feedback": "Sophia's code is clean, efficient, and always on time. Working with her has been a rewarding experience, and I look forward to future collaborations."
+    }
+  ],
+  "defaultFeedbacks": [
+    "An exceptional professional who exceeded my expectations with their attention to detail and dedication to perfection.",
+    "Highly recommend their services - the quality of their work is unparalleled, and they deliver results with a personal touch.",
+    "Transformative experience that brought my vision to life through their innovative and creative approach.",
+    "Incredible communication throughout the process, ensuring every detail was tailored to my needs.",
+    "A true expert in their field, delivering results that far exceeded my expectations.",
+    "Professional, creative, and incredibly skilled at understanding and executing client requirements.",
+    "Went above and beyond to ensure complete satisfaction, leaving no stone unturned in achieving excellence.",
+    "Innovative solutions that made a significant impact on my project, creating a lasting impression.",
+    "Collaborative and insightful throughout the entire process, offering valuable suggestions and feedback.",
+    "Remarkable work that truly stands out from the crowd, showcasing their unique skill set.",
+    "Exceeded all my expectations with their expertise, making the process seamless and stress-free.",
+    "A game-changer in their field of work, consistently delivering outstanding results.",
+    "Absolutely thrilled with the outcome of our project, and I look forward to working with them again.",
+    "Seamless experience from start to finish, with exceptional professionalism and expertise.",
+    "Their passion and dedication are truly inspiring, making them a standout in their industry.",
+    "I loved how they showcased my portfolio and brought out the best in my work for the audience to appreciate.",
+    "A client-centric approach that focuses on delivering value while creating meaningful experiences.",
+    "My website is now a reflection of my vision, thanks to their exceptional skills and creativity.",
+    "They made sharing my experience on their platform effortless and enjoyable.",
+    "I was blown away by their ability to highlight my strengths in the portfolio design.",
+    "Their feedback collection process is intuitive, making it easy for me to share my story.",
+    "It was a pleasure to collaborate with someone who genuinely values client input and ideas.",
+    "The way they captured the essence of my work and presented it was simply outstanding.",
+    "Sharing my experience on their platform felt like a conversation, not a task.",
+    "They turned my feedback into actionable insights, creating an experience that exceeded my expectations."
+  ]
+}
