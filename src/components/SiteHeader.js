@@ -63,13 +63,7 @@ const SiteHeader = () => {
             href="/"
             className="text-gradient font-nunito relative z-50 text-2xl md:text-[27px] 2xl:text-[29px] 3xl:text-[31px]"
           >
-            Nz<i className="pl-[3px]">Coding</i>
-          </Link>
-          <Link
-            href="/admin"
-            className="text-gradient font-nunito relative z-50 text-2xl md:text-[27px] 2xl:text-[29px] 3xl:text-[31px]"
-          >
-            .
+            Nz<i className="pl-[3px]">Coding</i>.
           </Link>
         </div>
 
