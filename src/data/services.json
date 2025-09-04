@@ -1,5 +1,5 @@
 {
-  "services": [
+  "card": [
     {
       "id": 1,
       "title": "Web Development",
@@ -35,6 +35,80 @@
       "title": "Website Maintenance",
       "icon": "/services/icon-6.png",
       "description": "I provide regular care for your website, keeping it secure, updated, and running smoothly. With ongoing maintenance, your site will always perform well and stay protected from problems."
+    }
+  ],
+  "process": [
+    {
+      "title": "Discovery & Planning",
+      "description": "We'll discuss your goals, target audience, and requirements to create a plan for your website."
+    },
+    {
+      "title": "Design & Mockups",
+      "description": "I'll create visual designs for your website and get your feedback before moving to development."
+    },
+    {
+      "title": "Development",
+      "description": "I'll build your website using modern technologies and best practices."
+    },
+    {
+      "title": "Testing & Revisions",
+      "description": "We'll test the website thoroughly and make any needed adjustments."
+    },
+    {
+      "title": "Launch & Optimization",
+      "description": "Your website goes live! I’ll handle deployment, and ensure everything runs smoothly."
+    }
+  ],
+  "faqs": [
+    {
+      "id": 1,
+      "question": "How long does it take to build a website?",
+      "answer": "The timeline varies depending on the complexity of the project. A simple brochure website typically takes 2-4 weeks, while an e-commerce site or custom web application may take 6-12 weeks or longer. I'll provide you with a detailed timeline during our initial consultation."
+    },
+    {
+      "id": 2,
+      "question": "What is the cost of your web development services?",
+      "answer": "Pricing depends on the scope and complexity of your project. Basic websites start at $1,500, while e-commerce solutions and custom applications begin at $3,500. I offer transparent pricing with no hidden fees and will provide a detailed quote after understanding your requirements."
+    },
+    {
+      "id": 3,
+      "question": "Do you provide ongoing support after the website is launched?",
+      "answer": "Yes, I offer website maintenance packages that include regular updates, security monitoring, backups, and technical support. These packages ensure your website remains secure, up-to-date, and performs optimally. We can discuss the right level of support for your business needs."
+    },
+    {
+      "id": 4,
+      "question": "Will my website be mobile-friendly?",
+      "answer": "Absolutely. All websites I develop are fully responsive and work seamlessly across all devices - desktops, tablets, and mobile phones. Mobile-friendliness is a standard part of my development process, not an add-on feature."
+    },
+    {
+      "id": 5,
+      "question": "Can you help with website hosting and domain registration?",
+      "answer": "Yes, I can assist you with selecting the right hosting provider and registering your domain name. I'll help you set up your hosting environment and ensure your website is properly configured for optimal performance and security."
+    },
+    {
+      "id": 6,
+      "question": "What platforms do you work with for e-commerce development?",
+      "answer": "I work with various e-commerce platforms including Shopify, WooCommerce (WordPress), Magento, and custom solutions. I'll recommend the best platform based on your specific business needs, budget, and scalability requirements."
+    },
+    {
+      "id": 7,
+      "question": "Can you redesign my existing website without losing content?",
+      "answer": "Yes, during a website redesign, I carefully migrate all your existing content to the new design. I ensure that your valuable content is preserved while improving the site's structure, design, and functionality. If needed, we can also reorganize or update content during the redesign process."
+    },
+    {
+      "id": 8,
+      "question": "Do you provide training on how to manage my website?",
+      "answer": "Yes, I provide comprehensive training on managing your website, especially for sites built with a CMS. I'll walk you through updating content, adding new pages, uploading images, and other essential tasks. I also provide documentation and ongoing support as needed."
+    },
+    {
+      "id": 9,
+      "question": "What information do you need from me to start a project?",
+      "answer": "To get started, I'll need information about your business goals, target audience, preferred design style, content (text and images), and any specific functionality requirements. Having a clear idea of your budget and timeline is also helpful. I'll guide you through the process with a detailed questionnaire during our initial consultation."
+    },
+    {
+      "id": 10,
+      "question": "Do you offer SEO services with website development?",
+      "answer": "Yes, I implement on-page SEO best practices during development, including proper site structure, meta tags, clean URLs, and optimized page speed. While I don't offer ongoing SEO management as a separate service, I build websites that are SEO-friendly and can recommend trusted SEO specialists for ongoing optimization needs."
     }
   ]
 }

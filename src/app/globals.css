@@ -235,6 +235,18 @@
 }
 
 /*-----------------------------------*\
+ -# CUSTOM PROPERTIES (BREAKPOINTS) #-
+\*-----------------------------------*/
+@theme {
+  --breakpoint-sm: 35.94rem;
+  --breakpoint-md: 48rem;
+  --breakpoint-lg: 60rem;
+  --breakpoint-xl: 64rem;
+  --breakpoint-2xl: 80rem;
+  --breakpoint-3xl: 100rem;
+}
+
+/*-----------------------------------*\
  -   #  ANIMATION DEFINITIONS  #     -
 \*-----------------------------------*/
 
@@ -333,18 +345,6 @@
   100% {
     transform: rotate(360deg);
   }
-}
-
-/*-----------------------------------*\
- -# CUSTOM PROPERTIES (BREAKPOINTS) #-
-\*-----------------------------------*/
-@theme {
-  --breakpoint-sm: 35.94rem;
-  --breakpoint-md: 48rem;
-  --breakpoint-lg: 60rem;
-  --breakpoint-xl: 64rem;
-  --breakpoint-2xl: 80rem;
-  --breakpoint-3xl: 100rem;
 }
 
 /*-----------------------------------*\

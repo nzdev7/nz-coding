@@ -43,7 +43,7 @@ export function ReviewCard({ review }) {
   const finalImageSrc = isValidUrl(imgSrc) && !hasError ? imgSrc : getDefaultAvatar(name);
 
   return (
-    <div className="card-animation flex-center relative p-[3px] rounded-2xl overflow-hidden transition-300 hover:-translate-y-0.5 hover:scale-[1.015] select-none">
+    <div className="card-animation flex-center relative p-[3px] rounded-2xl overflow-hidden transition-300 hover:-translate-y-0.5 hover:scale-[1.015]">
       <div className="onMobile review-card content bg-primary-card border-primary transition-500 p-6 overflow-hidden rounded-xl hover:border-transparent w-full h-full z-10 group min-h-[310px] flex flex-col justify-between">
         <div className="flex items-center gap-5 mb-5">
           <div className="relative w-20 min-w-20 h-20 rounded-xl overflow-hidden border-4 border-primary">

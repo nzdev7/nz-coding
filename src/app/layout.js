@@ -45,7 +45,7 @@ export default function RootLayout({ children }) {
       }}
     >
       <html lang="en" className={`${roboto.variable} ${nunito.variable}`}>
-        <body className="transition-500 bg-primary text-secondary">
+        <body className="transition-500 bg-primary text-secondary select-none">
           <AppProviders>
             <SiteHeader />
             <main>{children}</main>

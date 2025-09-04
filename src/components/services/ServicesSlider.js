@@ -147,7 +147,7 @@ const FeaturedServices = () => {
 
   useEffect(() => {
     // Get services data from imported JSON
-    const servicesData = serviceData.services || []; // Fixed this line
+    const servicesData = serviceData.card || []; // Fixed this line
     setServices(servicesData);
 
     // Add a brief delay to ensure CSS styles are fully loaded
