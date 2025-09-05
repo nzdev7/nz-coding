@@ -68,10 +68,6 @@ const HomePage = () => {
                   React Native and more. I'm passionate about staying updated with the latest trends and continuously
                   expanding my skill set to deliver innovative solutions.
                 </p>
-                <Link href="/components/resume" className="btn-secondary flex-center gap-2 w-9/12 sm:w-1/2 mt-8 py-3">
-                  <FileText strokeWidth={2.5} className="size-4" />
-                  My Resume
-                </Link>
               </div>
             </div>
             {/* # MY EXPERTISE # */}
@@ -87,10 +83,6 @@ const HomePage = () => {
                   By focusing on each client's unique needs, I deliver projects that boost engagement and help achieve
                   business goals.
                 </p>
-                <Link href="/about" className="btn-secondary flex-center gap-2 w-9/12 sm:w-1/2 mt-8 py-3">
-                  Learn More
-                  <ArrowRight strokeWidth={2.5} className="size-4" />
-                </Link>
               </div>
             </div>
           </div>

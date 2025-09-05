@@ -7,7 +7,6 @@ import { ThemeToggleButton } from '../hooks/useTheme';
 
 const NAV_LINKS = [
   { name: 'Home', path: '/' },
-  { name: 'About', path: '/about' },
   { name: 'Projects', path: '/projects' },
   { name: 'Services', path: '/services' },
   { name: 'Reviews', path: '/reviews' },
